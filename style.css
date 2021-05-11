@@ -64,6 +64,7 @@ body{
 .card{
     width: 80%;
     height: 350px;
+    max-width: 450px;
     border-radius: 5px;
     margin: 0 auto;
     padding: 1.5em;
@@ -98,7 +99,7 @@ body{
     }
     .card{
         width: 30%;
-        height: 650px;
+        height: 50%;
         margin: 0;
         padding: 3em;
     }
