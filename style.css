@@ -1,0 +1,129 @@
+/* Global Variables */
+
+:root{
+    --fontFamilyLexend:  'Lexend Deca', sans-serif;
+    --fontFamilyBig: 'Big Shoulders Display', cursive;
+    --fontWeight400: 400;
+    --fontWeight700: 700;
+
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhite : hsla(0, 0%, 100%, 0.75); /* (paragraphs)*/
+    --Verylightgray : hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+
+/* Global Styles */
+
+*,
+:after,
+:before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fontFamilyLexend);
+    font-size: 15px;
+    background-color: var(--Verylightgray);
+}
+
+
+/* Typography */
+
+.card-title,
+.btn{
+    color: var(--Verylightgray);
+}
+
+.card-title{
+    font-family: var(--fontFamilyBig);
+    font-size: var(--fontWeight700);
+    font-size: 28px;
+}
+
+.card-text{
+    color: var(--Transparentwhite);
+    margin-bottom: 3em;
+    line-height: 1.6;
+}
+
+
+/* Layout */
+
+.main-flex{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+
+/* Component */
+
+.card{
+    width: 80%;
+    height: 350px;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+
+
+.card-orange{
+    background: var(--Brightorange);
+}
+
+.card-cyan{
+    background: var(--Darkcyan);
+}
+
+.card-Darkcyan{
+    background: var(--Verydarkcyan);
+}
+
+.btn{
+    text-decoration: none;
+    padding: 15px 40px;
+    background: var(--Verylightgray);
+    border-radius: 50px;
+}
+
+@media  (min-width: 675px){
+    .main-flex{
+        flex-direction: row;
+        margin: 200px;
+        
+    }
+    .card{
+        width: 30%;
+        height: 650px;
+        margin: 0;
+        padding: 3em;
+    }
+    .card-title{
+        font-size: 42px;
+    }
+    .card-text{
+        margin-bottom: 3em;
+        font-size: 24px;
+        margin-bottom: 5em;
+    }
+    .btn{
+        padding: 15px 45px;
+    }
+    
+}
+
+.btn-orange{
+    color: var(--Brightorange);
+}
+
+.btn-cyan{
+    color: var(--Darkcyan);
+}
+
+.btn-Darkcyan{
+    color: var(--Verydarkcyan);
+}
